@@ -120,7 +120,7 @@ $short = new shorten;
 			<!-- /main -->
 			<!-- FOOTER -->
 			<footer class="footer">
-				&copy; 2016 The Develovers
+				&copy; 2016 Shota.ONE <a  href="https://github.com/684102/shota.one" target="_blank">github project</a>	
 			</footer>
 			<!-- END FOOTER -->
 		</div>
