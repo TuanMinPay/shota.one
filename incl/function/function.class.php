@@ -48,7 +48,7 @@ class shorten {
 	$thisurl = $this->checkurl($url);
 	if ($_SESSION['lasturl'] == $url) { $short=$_SESSION['short'];}
 	elseif ($thisurl=="n" OR $this->banlist($url) == 'BANNED') { $short='NOT A URL';}
-	else  { $short="shota.one/".$this->submiturl($url,$password);}
+	else  { $short=domain."/".$this->submiturl($url,$password);}
 	
 	
 	#

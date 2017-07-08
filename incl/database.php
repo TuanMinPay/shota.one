@@ -9,12 +9,13 @@
 */
 session_start();ob_start();
 error_reporting(0);
-$http = explode('"',$_SERVER['HTTP_CF_VISITOR'])[5];
-if ($http=="http") { $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];header('Location: ' . $redirect);}
-ELSE {echo $http;}
+$http = explode('"',$_SERVER['HTTP_CF_VISITOR']);
+if ($http[3]=="http") { $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];header('Location: ' . $redirect);}
+#var_dump( $http[3]);
 define ("database","yFedzS_db/");
 define ("config","incl/config.db");
+define ("domain","shota.one");
 include 'incl/function/function.class.php'; 
 include 'incl/function/function.go.class.php';
 	
-$C_CONFIG_KEY="Xsu9A9J7Z7CymA63Y5c9uy3S9jdRa7GbEP6v87n8w2cVG4juBBBW5YEzcxNR3w4";
+$C_CONFIG_KEY="Xsu9A9J7Z7CymA63Y5c8xEj8ZSJC9Jn79uy3S9jdRa7GbEP6v87n8w2cVG4juBBBW5YEzcxNR3w4zUk3mrTVDyh284U2gg6YxM9B";
