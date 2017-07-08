@@ -4,6 +4,7 @@ Shota URL Shortener and Stored Platform TEXT DATABASE
 2. Rewrite URL /([a-zA-Z0-9)+] goid.php?goid=$1
 3. Run :)
 4. Live preview : http://shota.one
+5. More function is comming soon , use and review for us.
 ____________________________________
 1. Change counter number from : incl/config.db ( change to zero ) only once time when you setup the code.
 2. Change "$C_CONFIG_KEY" in "incl/database.db" and "yFedzS_db" to another folder to protected database
