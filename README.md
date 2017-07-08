@@ -1,4 +1,4 @@
-# shota.one 
+# shota.one NO SQL JUST TEXT DATABASE, SIMPLE
 Shota URL Shortener and Stored Platform TEXT DATABASE 
 1. Upload all source to your hosting
 2. Rewrite URL /([a-zA-Z0-9)+] goid.php?goid=$1
