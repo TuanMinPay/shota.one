@@ -17,4 +17,4 @@ define ("config","incl/config.db");
 include 'incl/function/function.class.php'; 
 include 'incl/function/function.go.class.php';
 	
-$C_CONFIG_KEY="Xsu9A9J7Z7CymA63Y5c8xEj8ZSJC9Jn79uy3S9jdRa7GbEP6v87n8w2cVG4juBBBW5YEzcxNR3w4zUk3mrTVDyh284U2gg6YxM9B";
+$C_CONFIG_KEY="Xsu9A9J7Z7CymA63Y5c9uy3S9jdRa7GbEP6v87n8w2cVG4juBBBW5YEzcxNR3w4";
