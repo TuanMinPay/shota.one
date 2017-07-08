@@ -1,5 +1,5 @@
 # shota.one NO SQL. SIMPLE
-Shota URL Shortener and Stored Platform TEXT DATABASE 
+Shota URL Shortener and Stored Platform T, is working well on Mobile,PC,Tablet with html5,javascript support 
 1. Upload all source to your hosting , SSD hosting is more speed.
 2. Rewrite URL /([a-zA-Z0-9)+] goid.php?goid=$1
 3. Run :)
