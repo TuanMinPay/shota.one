@@ -5,9 +5,9 @@ ____________________________________
 # Config
 1. Upload all source to your hosting , SSD hosting is more speed.
 1. Rewrite URL `/([a-zA-Z0-9]+) goid.php?goid=$1`
-1. Open : `incl/config.db` , change the number to `0`, only frist time when setup.
+1. Open : `incl/config.db` , change the number to `0`, only frist time when setup , CHMOD `664` or `666` this file
 1. `incl/database.db` define config:
-* `database` : change this and change name of folder to protect database
+* `database` : change this and change name of folder to protect database, CHMOD `777` or `775` this folder
 * `domain` : change your domain ( whith out http or www )
 * `$C_CONFIG_KEY` : using **strongpasswordgenerator.com** make your random 100 characters A-Za-z0-9
 ____________________________________
