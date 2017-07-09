@@ -4,7 +4,7 @@ Rate for this project and get more function update on furute.
 ____________________________________
 # Config
 1. Upload all source to your hosting , SSD hosting is more speed.
-1. Rewrite URL /([a-zA-Z0-9]+) goid.php?goid=$1
+1. Rewrite URL `/([a-zA-Z0-9]+) goid.php?goid=$1`
 1. Open : `incl/config.db` , change the number to `0`, only frist time when setup.
 1. `incl/database.db` define config:
 * `database` : change this and change name of folder to protect database
