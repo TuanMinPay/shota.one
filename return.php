@@ -16,4 +16,7 @@ if ($_GET['makeurl']){ echo $C->makeurl();}
 if ($_GET['bypass']){echo $D->check();}
 if ($_GET['passwd']){echo $D->passprotect();}
 if ($_GET['verfy']){echo $D->checkpwd();}
+#
+if ($_GET['custom_register']){echo $D->customname(htmlentities($_POST['usercustom']));}
+
 ?>

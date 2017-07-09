@@ -105,7 +105,8 @@ $short = new shorten;
 					<em>Your long to short</em>
 				</div>
 				<div class="main-content">
-				
+					<div class="widget-content">
+						<div class="row">
 <?php
 				echo $short->short();
 				
@@ -116,10 +117,10 @@ $short = new shorten;
 
 				</div>
 			</div>
-
+	</div>
 			<!-- /main -->
 			<!-- FOOTER -->
-			<footer class="footer">
+			<footer class="footer footer-fixed">
 				&copy; 2016 Shota.ONE <a  href="https://github.com/684102/shota.one" target="_blank">github project</a>	
 			</footer>
 			<!-- END FOOTER -->
@@ -131,9 +132,11 @@ $short = new shorten;
 	<script src="incl/theme/js/plugins/bootstrap-tour/bootstrap-tour.custom.js"></script>
 	<script src="incl/theme/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="incl/theme/js/king-common.js"></script>
-	
+	<script src="incl/theme/js/plugins/jquery-maskedinput/jquery.masked-input.min.js"></script>
+
 	
 		<script type="text/javascript" charset="utf-8">
+			
 		var flashMsgSound = new Audio();
 		var offlineSound = new Audio();
 

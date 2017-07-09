@@ -3,15 +3,20 @@ class go extends shorten {
 #_________________________________________________________________________________________
 	function read($id)
 	{
-		$data = explode("|",file_get_contents(database.$id.'.crypt'));
+		$daba = $this->idorcustom($id);
+		if ($daba == "id") {$data = explode("|",file_get_contents(database.$id.'.crypt'));}
+		else { $data = explode("|",file_get_contents(database.$daba));}
 		return $data;
 		
 	}
 #_________________________________________________________________________________________
 	function islive ($id)
 	{
-		if (file_exists(database.$id.'.crypt')){ return 'y';}
-		else { return 'n';}
+		$daba = $this->idorcustom($id);
+	//	var_dump ($daba);
+		if ($daba == "id") {if (file_exists(database.$id.'.crypt')){ return 'y';}else { return 'n';}}
+		else { if (file_exists(database.$daba)){ return 'y';}else { return 'n';}}
+		
 	}
 #_________________________________________________________________________________________
 	function checkpwd ()
@@ -97,6 +102,20 @@ class go extends shorten {
 		}
 	}
 #_________________________________________________________________________________________
+	function idorcustom ($id)
+	{
+		$convert_id = substr(md5 ($id),3,12).'.cus';
+		$file  = database.$convert_id;
+		
+		if (file_exists($file))
+		{
+			return $convert_id;
+		}
+		else {
+		return "id";	
+		}
+	}
+#_________________________________________________________________________________________
 
 	function check()
 	{
@@ -107,9 +126,16 @@ class go extends shorten {
 	$hashtime = $_SESSION['hashtimego'];
 	$overlay = $time-$hashtime;
 	$error = '<script type="text/javascript" charset="utf-8">location.reload();</script>';
+	
 	if ($hash != $hash1) { return  $error;}
 	else {
-		if ($overlay>=5) { return $this->work($id);}
+		if ($overlay>=5) {
+		
+		return $this->work($id);
+
+		
+		
+		}
 		else { return $error;}
 	}
 	
