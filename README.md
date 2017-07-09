@@ -8,7 +8,7 @@ Shota URL Shortener and Stored Platform , is working well on Mobile,PC,Tablet wi
 ____________________________________
 # Config
 1. Open : incl/config.db , change the number to "0";
-2. Change "$C_CONFIG_KEY" , "yFedzS_db" , and domain "shota.one" in "incl/database.db" and to another folder to protected database
+2. Change <$C_CONFIG_KEY> , "yFedzS_db" , and domain "shota.one" in "incl/database.db" and to another folder to protected database
 3. That it simple to short your url.
 # Change Log
 1. Update Custom URL and fixed some bug (2017.10.7) GMT+7
