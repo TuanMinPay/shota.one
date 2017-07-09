@@ -9,8 +9,8 @@ ____________________________________
 # Config
 *. Open : `incl/config.db` , change the number to `0`, only frist time when setup.
 *. `incl/database.db` 
-	*.`define database` : change this and change name of folder to protect database
-	*.`define domain` : change your domain ( whith out http or www )
+ *.`define database` : change this and change name of folder to protect database
+ *.`define domain` : change your domain ( whith out http or www )
 *. That it simple to short your url.
 # Change Log
 1. Update Custom URL and fixed some bug (2017.10.7) GMT+7
