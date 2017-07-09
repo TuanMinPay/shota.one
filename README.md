@@ -1,6 +1,6 @@
 # shota.one
 Shota URL Shortener and Stored Platform , is working well on Mobile,PC,Tablet with html5,javascript support, no mysql needed.
-Rate for this project and get more function update on furute.
+Rate for this project and get more function update on future.
 ____________________________________
 # Config
 1. Upload all source to your hosting , SSD hosting is more speed.
