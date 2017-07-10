@@ -1,12 +1,13 @@
 <?php
 /**
- *      [HoaKhuya] (C)2010-2099 Hacking simple source Orzg.
- *      Drark license payto BitcoinAddress: 1HikvH2jnMNg4rDJHykMMk31gpyr2qrhU4
+ *		[HoaKhuya] (C)2010-2099 Hacking simple source Orzg.
+ *		Drark license payto BitcoinAddress: 1HikvH2jnMNg4rDJHykMMk31gpyr2qrhU4
  *		Coders : develop@execs.com;yuna.elin@yandex.ru;tonghua@dr.com;
  *
- *      $Id: goid.php [BuildDB.155478522] 07/07/2017 9:32 CH $
-    
+ *		$Id: goid.php [BuildDB.155478522] 10/07/2017 5:20 CH $
+	
 */
+
 include 'incl/database.php';
 $n = new go;
 

@@ -1,4 +1,13 @@
 <?php
+/**
+ *		[HoaKhuya] (C)2010-2099 Hacking simple source Orzg.
+ *		Drark license payto BitcoinAddress: 1HikvH2jnMNg4rDJHykMMk31gpyr2qrhU4
+ *		Coders : develop@execs.com;yuna.elin@yandex.ru;tonghua@dr.com;
+ *
+ *		$Id: function.class.php [BuildDB.155478522] 10/07/2017 5:20 CH $
+	
+*/
+
 function encrypt($string) {global $C_CONFIG_KEY; $key=$C_CONFIG_KEY;$result = '';for($i=0; $i<strlen($string); $i++) {$char = substr($string, $i, 1);$keychar = substr($key, ($i % strlen($key))-1, 1);$char = chr(ord($char)+ord($keychar));$result.=$char;}return base64_encode($result);}
 function decrypt($string) {global $C_CONFIG_KEY; $key=$C_CONFIG_KEY;$result = '';$string = base64_decode($string);for($i=0; $i<strlen($string); $i++) {$char = substr($string, $i, 1);$keychar = substr($key, ($i % strlen($key))-1, 1);$char = chr(ord($char)-ord($keychar));$result.=$char;}return $result;}
 
@@ -98,7 +107,8 @@ class shorten {
 	$hash = $_POST['hash'];
 	$randid = rand(0,9999);
 	$checkhash = $this->hashcreate("0");
-	if ($hash!=$checkhash OR !$hash OR !$url) { return '<div class="col-md-12"><div class="widget"><div class="widget-content" style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;"><div class="alert alert-warning"> <i class="fa fa-times" aria-hidden="true"></i> Your url may seem not a url, or that denied</div></div></div>';}
+	$error_return ='<div class="col-md-12"><div class="widget"><div class="widget-content" style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;"><div class="alert alert-warning"> <i class="fa fa-times" aria-hidden="true"></i> Your url may seem not a url, or that denied</div></div></div>';
+	if ($hash!=$checkhash OR !$hash OR !$url) {return  $error_return;}
 	else {
 	$short = "shota.one/FReA";
 	$thisurl = $this->checkurl($url);
@@ -113,7 +123,7 @@ class shorten {
 	$_SESSION['short'] = $short;
 	}
 	#
-	if ($short == 'NOT A URL') { return '<div class="alert alert-warning"> <i class="fa fa-times" aria-hidden="true"></i> Your url may seem not a url, or that denied</div>';}
+	if ($short == 'NOT A URL') {return $error_return;}
 	return '<script>$(\'.demo-2'.$randid.'\').click(function(){$(\'.urlcopyed'.$randid.'\').CopyToClipboard();});</script>
 
 	<div class="input-group" style="max-width:400px">
